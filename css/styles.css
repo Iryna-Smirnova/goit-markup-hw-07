@@ -870,12 +870,6 @@ a {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer {
-    width: 1600px;
-  } 
-}
-
 .under {
   display: block;
   text-align: center;
@@ -885,7 +879,6 @@ a {
   .under {
     display: flex;
     flex-direction: row;
-    justify-content: center;
   } 
 }
 
@@ -896,7 +889,23 @@ a {
   margin-left: 76px;
   margin-right: 89px;
   margin-bottom: 60px;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .contact-blok {
+   margin: 0;
+  }
+}
+
+.contact-footer {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-footer {
+    width: 232px;
+  }
 }
 
 .footer-logo {
@@ -921,6 +930,12 @@ a {
 .contact-address {
   text-align: center;
 }
+
+@media screen and (min-width: 1200px) {
+  .contact-address {
+   text-align: left;
+  }
+  }
 
 .contacts {
   padding: 0;
@@ -966,6 +981,13 @@ a {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .social {
+    margin: 0;
+   margin-left: 70px;
+  }
+  }
+
 .social .social-icons {
   display: flex;
 
@@ -977,7 +999,7 @@ a {
 .social .social-text {
   margin-top: 0;
   margin-bottom: 20px;
-  padding-top: 10px;
+  padding-top: 12px;
 
   font-weight: 700;
   font-size: 14px;
@@ -1028,6 +1050,27 @@ a {
   padding: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 570px;
+    margin-top: 12px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-footer {
+    display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  width: 358px;
+  padding: 0;
+  }
+}
+
 .subscribe-input {
   height: 50px;
   width: 450px;
@@ -1043,6 +1086,12 @@ a {
   align-items: left;
   background: transparent;
   outline-style: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    width: 358px;
+  }
 }
 
 .subscribe-input:focus {
@@ -1065,8 +1114,13 @@ a {
   .form-footer {
     margin-left: 159px;
   }
-  }
+}
 
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    margin-left: 94px;
+  }
+}
 
 .subscribe-label {
   display: block;
@@ -1091,6 +1145,13 @@ a {
   background-color: var(--primary-accent-color);
   color: var(--white-color);
   transition: background-color 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .button.subscribe {
+    margin-left: 12px;
+    margin-top: 35px;
+  }
 }
 
 .button.subscribe::after {
