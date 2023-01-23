@@ -103,6 +103,7 @@ a {
 }
 
 .menu-container {
+  display: none;
   position: absolute;
   top: 100%;
   width: 100%;
@@ -112,6 +113,11 @@ a {
   text-align: center;
   font-size: 20px;
 } 
+
+.menu-container.is-open {
+  display: block;
+}
+
 
 /* hero */
 
