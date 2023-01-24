@@ -151,14 +151,9 @@ img {
   }  
 }
 
-/* @media screen and (min-width: 768px){
-  .info-item:not(:last-child) {
-   margin-bottom: 10px;
-  }
-} */
 @media screen and (min-width: 768px){
   .info-item:not(:last-child) {
-   margin-bottom: 0;
+   margin-bottom: 5px;
   }
 }
 
@@ -228,6 +223,30 @@ img {
   align-items: center;
   justify-content: center;
   fill: currentColor;
+}
+
+.info-icon.letter {
+  width: 14px;
+  height: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .info-icon.letter {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.info-icon.phone {
+  width: 10px;
+  height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .info-icon.phone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .info-link:hover,
