@@ -151,17 +151,16 @@ img {
   }  
 }
 
-@media screen and (min-width: 768px){
+/* @media screen and (min-width: 768px){
   .info-item:not(:last-child) {
    margin-bottom: 10px;
   }
-}
+} */
 @media screen and (min-width: 768px){
   .info-item:not(:last-child) {
    margin-bottom: 0;
   }
 }
-
 
 @media screen and (min-width: 1200px) {
   .info-list {
@@ -204,7 +203,7 @@ img {
 
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -21px;
 
   display: block;
   width: 100%;
@@ -243,9 +242,15 @@ a.current-page:visited {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-link,
-  .info-link {
+  .nav-link {
   color: var(--primary-text-color);
+  transition: color 250ms var(--timing-function);
+}  
+}
+
+@media screen and (min-width: 768px) {
+  .info-link {
+  color: var(--secondary-text-color);
   transition: color 250ms var(--timing-function);
 }  
 }
@@ -414,6 +419,8 @@ a.current-page:visited {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 } 
 
@@ -427,7 +434,8 @@ a.current-page:visited {
 @media screen and (min-width: 1200px) {
   .features-item {
     width: 270px;
-    margin: 0 15px;
+    margin: 0 15px 0 15px;
+
   }
 }
 
@@ -538,7 +546,6 @@ a.current-page:visited {
 
 .section-work {
   padding-bottom: 94px;
-
   text-align: center;
 }
 
@@ -589,20 +596,21 @@ a.current-page:visited {
 
 .section-team {
   padding-bottom: 60px;
-  background: var(--white-color);
+  padding-top: 60px;
+  background: #F5F4FA;;
 }
 
 @media screen and (min-width: 1200px) {
   .section-team {
     padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 
 .section-title {
   margin: 0;
   margin-bottom: 30px;
-  margin-top: 60px;
-
+ 
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
@@ -612,6 +620,8 @@ a.current-page:visited {
 
 @media screen and (min-width: 1200px) {
   .section-title {
+    margin-bottom: 50px;
+ 
     font-size: 36px;
     line-height: 1.17;
   }
@@ -641,7 +651,7 @@ a.current-page:visited {
 @media screen and (min-width: 1200px) {
   .team-item {
     width: 270px;
-    margin: 0 15px;
+    margin: 15px;
   }
 }
 
@@ -768,12 +778,14 @@ a.current-page:visited {
 /* Клієнти */
 
 .section-customers {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section-customers {
     padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 
@@ -790,6 +802,7 @@ a.current-page:visited {
 
 @media screen and (min-width: 1200px) {
   .customers-title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
   }
@@ -801,6 +814,13 @@ a.current-page:visited {
   padding: 0;
   margin: -15px;
 }
+
+@media screen and (min-width: 1200px) {
+  .customers-list {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  }
 
 .customers-item {
   width: 210px;
@@ -817,6 +837,8 @@ a.current-page:visited {
   @media screen and (min-width: 1200px) {
   .customers-item {
     width: 170px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   }
 
@@ -1087,10 +1109,6 @@ a.current-page:visited {
   }
 }
 
-.contact-footer {
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 768px) {
   .contact-footer {
     width: 232px;
@@ -1106,6 +1124,12 @@ a.current-page:visited {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    text-align: left;
+  }
 }
 
 .logo-footer-main {
@@ -1124,7 +1148,7 @@ a.current-page:visited {
   .contact-address {
    text-align: left;
   }
-  }
+}
 
 .contacts {
   padding: 0;
@@ -1173,7 +1197,7 @@ a.current-page:visited {
 @media screen and (min-width: 1200px) {
   .social {
     margin: 0;
-   margin-left: 70px;
+    margin-left: 70px;
   }
   }
 
@@ -1195,6 +1219,12 @@ a.current-page:visited {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .social .social-text  {
+    text-align: left;
+  }
 }
 
 .social .social-icons {
@@ -1265,6 +1295,7 @@ a.current-page:visited {
   width: 450px;
   margin-bottom: 20px;
   margin: 0;
+  padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   font-weight: 400;
@@ -1317,6 +1348,13 @@ a.current-page:visited {
   color: var(--white-color);
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 1200px) {
+  .social .social-text  {
+    text-align: left;
+  }
+}
+
 
 .button.subscribe {
   position: relative;
@@ -1607,6 +1645,14 @@ a.current-page:visited {
   }
 }
 
+.menu-btn {
+  padding: 0;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color:var(--primary-text-color);
+}
+
 .menu-toggle {
   position: absolute;
   top: 10px;
@@ -1629,7 +1675,8 @@ a.current-page:visited {
 }
 
 @media (min-width: 768px) {
-  .menu-toggle {
+  .menu-toggle,
+  .menu-btn {
     display: none;
   }
 }
