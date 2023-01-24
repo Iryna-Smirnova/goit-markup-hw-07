@@ -15,35 +15,48 @@
 <body>
 <!--HEADER-->
 <header class="page-header">
-    <div class="container top-line">
-        <a class="header-logo" href="./index.html"><span class="logo-header-main">Web</span><span class="logo-header-sub">Studio</span></a>
-        <nav class="navigatoin">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="nav-link link" href="./index.html">Студія</a></li>
-                <li class="nav-item"><a class="nav-link link current-page" href="./portfolio.html">Портфоліо</a></li>
-                <li class="nav-item"><a class="nav-link link" href="">Контакти</a></li>
-            </ul>
-        </nav>
-        <ul class="info-list">
-          <li class="info-item">
-            <a class="info-link link" href="https://info@devstudio.com">
-              <svg class="info-icon link" width="16" height="12">
-                <use href="./img/icons.svg#icon-letter"></use>
-              </svg>
-                <span>info@devstudio.com</span>
-            </a>
-          </li>
-          <li class="info-item">
-            <a class="info-link link" href="tel:+380961111111">
-              <svg class="info-icon link" width="10" height="16">
-                <use href="./img/icons.svg#icon-phone"></use>
-              </svg>
-                <span>+38 096 111 11 11</span>
-            </a>
-          </li>
+  <div class="container top-line">
+    <a class="header-logo" href="./index.html">
+      <span class="logo-header-main">Web</span><span class="logo-header-sub">Studio</span>
+    </a>
+
+    <nav class="navigatoin">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link link" href="./index.html">Студія</a></li>
+            <li class="nav-item"><a class="nav-link link current-page" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav-item"><a class="nav-link link" href="">Контакти</a></li>
         </ul>
-    </div>
+    </nav>
+
+    <ul class="info-list">
+      <li class="info-item">
+        <a class="info-link link" href="https://info@devstudio.com">
+          <svg class="info-icon link" width="16" height="12">
+            <use href="./img/icons.svg#icon-letter"></use>
+          </svg>
+            <span>info@devstudio.com</span>
+        </a>
+      </li>
+      <li class="info-item">
+        <a class="info-link link" href="tel:+380961111111">
+          <svg class="info-icon link" width="10" height="16">
+            <use href="./img/icons.svg#icon-phone"></use>
+          </svg>
+            <span>+38 096 111 11 11</span>
+        </a>
+      </li>
+    </ul>
+
+    <button type="button" class="menu-toggle js-open-menu" 
+    aria-expanded="false" 
+    aria-controls="mobile-menu">  
+      <svg class="icon-menu" width="40" height="40" 
+      aria-label="Перемикач мобільного меню">
+        <use class="icon-menu" href="./img/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+</div>
 </header>
 
 <!-- Portfolio -->
@@ -64,7 +77,21 @@
                 <li class="working-list">
                     <a href="#" class="working-link">
                       <div class="img-wrapper">
-                        <img class="working-img" src="./img/technocrate.jpg" alt="Тех-підтримка" width="370">
+                        <img 
+                          class="working-img" 
+                          srcset="
+                          ./img/Портфоліо/img1tab@1x.jpg 354W,
+                          ./img/Портфоліо/img1mob@1x.jpg 370W,
+                          ./img/Портфоліо/img1desk@1x.jpg 450W,
+                          ./img/Портфоліо/img1tab@2x.jpg 708W,
+                          ./img/Портфоліо/img1mob@2x.jpg 740W,
+                          ./img/Портфоліо/img1desk@2x.jpg 900W,
+                          "
+                          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                          src="./img/Портфоліо/img1mob@1x.jpg" 
+                          alt="Тех-підтримка" 
+                          width="450" height="294"
+                          />
                         <div class="description">
                           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                           Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -79,7 +106,21 @@
                 <li class="working-list">
                     <a href="#" class="working-link">
                       <div class="img-wrapper">
-                        <img class="working-img" src="./img/poster-basket.jpg" alt="постер-гри-в-баскетбол" width="370">
+                        <img 
+                        class="working-img" 
+                        srcset="
+                        ./img/Портфоліо/img2tab@1x.jpg 354W,
+                        ./img/Портфоліо/img2mob@1x.jpg 370W,
+                        ./img/Портфоліо/img2desk@1x.jpg 450W,
+                        ./img/Портфоліо/img2tab@2x.jpg 708W,
+                        ./img/Портфоліо/img2mob@2x.jpg 740W,
+                        ./img/Портфоліо/img2desk@2x.jpg 900W,
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./img/Портфоліо/img2mob@1x.jpg" 
+                        alt="постер-гри-в-баскетбол" 
+                        width="450" height="294"
+                        />
                         <div class="description">
                           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                           Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -94,7 +135,21 @@
                 <li class="working-list">
                     <a href="#" class="working-link">
                        <div class="img-wrapper">
-                        <img class="working-img" src="./img/restaurant-seafood.jpg" alt="емблема-ресторану" width="370">
+                        <img 
+                        class="working-img" 
+                        srcset="
+                        ./img/Портфоліо/img3tab@1x.jpg 354W,
+                        ./img/Портфоліо/img3mob@1x.jpg 370W,
+                        ./img/Портфоліо/img3desk@1x.jpg 450W,
+                        ./img/Портфоліо/img3tab@2x.jpg 708W,
+                        ./img/Портфоліо/img3mob@2x.jpg 740W,
+                        ./img/Портфоліо/img3desk@2x.jpg 900W,
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./img/Портфоліо/img3mob@1x.jpg" 
+                        alt="емблема-ресторану" 
+                        width="450" height="294"
+                        />
                         <div class="description">
                           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                           Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -109,7 +164,21 @@
                 <li class="working-list">
                     <a href="#" class="working-link">
                        <div class="img-wrapper">
-                        <img class="working-img" src="./img/project-prime.jpg" alt="навушники" width="370">
+                        <img 
+                        class="working-img" 
+                        srcset="
+                        ./img/Портфоліо/img4tab@1x.jpg 354W,
+                        ./img/Портфоліо/img4mob@1x.jpg 370W,
+                        ./img/Портфоліо/img4desk@1x.jpg 450W,
+                        ./img/Портфоліо/img4tab@2x.jpg 708W,
+                        ./img/Портфоліо/img4mob@2x.jpg 740W,
+                        ./img/Портфоліо/img4desk@2x.jpg 900W,
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./img/Портфоліо/img4mob@1x.jpg" 
+                        alt="навушники" 
+                        width="450" height="294"
+                        />
                         <div class="description">
                           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                           Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -124,7 +193,21 @@
                 <li class="working-list">
                     <a href="#" class="working-link">
                        <div class="img-wrapper">
-                        <img class="working-img" src="./img/project-boxes.jpg" alt="коробки" width="370">
+                        <img 
+                        class="working-img" 
+                        srcset="
+                        ./img/Портфоліо/img5tab@1x.jpg 354W,
+                        ./img/Портфоліо/img5mob@1x.jpg 370W,
+                        ./img/Портфоліо/img5desk@1x.jpg 450W,
+                        ./img/Портфоліо/img5tab@2x.jpg 708W,
+                        ./img/Портфоліо/img5mob@2x.jpg 740W,
+                        ./img/Портфоліо/img5desk@2x.jpg 900W,
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./img/Портфоліо/img5mob@1x.jpg" 
+                        alt="коробки" 
+                        width="450" height="294"
+                        />
                         <div class="description">
                           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                           Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -139,7 +222,21 @@
                 <li class="working-list">
                     <a href="#" class="working-link">
                        <div class="img-wrapper">
-                        <img class="working-img" src="./img/inspiration-has-no-borders.jpg" alt="натхнення-не-має-кордонів" width="370">
+                        <img 
+                        class="working-img" 
+                        srcset="
+                        ./img/Портфоліо/img6tab@1x.jpg 354W,
+                        ./img/Портфоліо/img6mob@1x.jpg 370W,
+                        ./img/Портфоліо/img6desk@1x.jpg 450W,
+                        ./img/Портфоліо/img6tab@2x.jpg 708W,
+                        ./img/Портфоліо/img6mob@2x.jpg 740W,
+                        ./img/Портфоліо/img6desk@2x.jpg 900W,
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./img/Портфоліо/img6mob@1x.jpg" 
+                        alt="натхнення-не-має-кордонів" 
+                        width="450" height="294"
+                        />
                         <div class="description">
                           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                           Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -154,7 +251,21 @@
                 <li class="working-list">
                     <a href="#" class="working-link">
                        <div class="img-wrapper">
-                        <img class="working-img" src="./img/limited-edition.jpg" alt="книга" width="370">
+                        <img 
+                        class="working-img" 
+                        srcset="
+                        ./img/Портфоліо/img7tab@1x.jpg 354W,
+                        ./img/Портфоліо/img7mob@1x.jpg 370W,
+                        ./img/Портфоліо/img7desk@1x.jpg 450W,
+                        ./img/Портфоліо/img7tab@2x.jpg 708W,
+                        ./img/Портфоліо/img7mob@2x.jpg 740W,
+                        ./img/Портфоліо/img7desk@2x.jpg 900W,
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./img/Портфоліо/img7mob@1x.jpg" 
+                        alt="книга" 
+                        width="450" height="294"
+                        />
                         <div class="description">
                           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                           Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -169,7 +280,21 @@
                 <li class="working-list">
                     <a href="#" class="working-link">
                        <div class="img-wrapper">
-                        <img class="working-img" class="working-img" src="./img/project-lab.jpg" alt="бірка-лабораторії" width="370">
+                        <img 
+                        class="working-img" 
+                        srcset="
+                        ./img/Портфоліо/img8tab@1x.jpg 354W,
+                        ./img/Портфоліо/img8mob@1x.jpg 370W,
+                        ./img/Портфоліо/img8desk@1x.jpg 450W,
+                        ./img/Портфоліо/img8tab@2x.jpg 708W,
+                        ./img/Портфоліо/img8mob@2x.jpg 740W,
+                        ./img/Портфоліо/img8desk@2x.jpg 900W,
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./img/Портфоліо/img8mob@1x.jpg" 
+                        alt="бірка-лабораторії" 
+                        width="450" height="294"
+                        />
                         <div class="description">
                           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                           Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -184,7 +309,21 @@
                 <li class="working-list">
                     <a href="#" class="working-link">
                        <div class="img-wrapper">
-                        <img class="working-img" class="working-img" src="./img/growing-business.jpg" alt="комп'ютер" width="370">
+                        <img 
+                        class="working-img" 
+                        srcset="
+                        ./img/Портфоліо/img9tab@1x.jpg 354W,
+                        ./img/Портфоліо/img9mob@1x.jpg 370W,
+                        ./img/Портфоліо/img9desk@1x.jpg 450W,
+                        ./img/Портфоліо/img9tab@2x.jpg 708W,
+                        ./img/Портфоліо/img9mob@2x.jpg 740W,
+                        ./img/Портфоліо/img9desk@2x.jpg 900W,
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./img/Портфоліо/img9mob@1x.jpg" 
+                        alt="комп'ютер" 
+                        width="450" height="294"
+                        />
                         <div class="description">
                           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                           Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
